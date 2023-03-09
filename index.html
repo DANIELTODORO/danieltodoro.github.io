@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestro primer ejemplo en html</title>
+    <title>CV - Proyecto Final Ticmas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
 </head>
+
 <body>
-    <p>Hola mundo!</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">CV - Proyecto</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#estudios">Estudios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#expLab">Experiencias Laboral</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contactar">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+            <section id="encabezado" class="encabezado">
+                <article id="perfil">
+                    <figure id="foto">
+                        <img src="imagenes\foto.jpg" alt="Foto de perfil" id="fotoPerfil" />
+                    </figure>
+                </article>
+                <article id="nombreTitulo">
+                    <h1 class="nombreTitulo" id="apellidoPersona"></h1>
+                    <h1 class="nombreTitulo" id="nombrePersona"></h1>
+                    <h2 class="nombreTitulo" id="profesionPersona">Todoro Daniel</h2>
+                </article>
+            </section>
+        </header>
+        <div id="pagina">
+        <main id="cuerpo">
+            <section id="info" class="tematica">
+                <article id="titInfoPersonal" class="titulo">
+                    <i class="fa-solid fa-address-card iconoTitulo"></i>
+                    <h3>INFORMACIÓN PERSONAL</h3>
+                    <div class="fleVisibilidad" id="mostrarInfo">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarInfo">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <p>DNI: 44202888 </p>
+                    <p>Fecha de nacimiento: 01/01/1980</p>
+                    <p>Calle: 9 DE JULIO 100</p>
+                    <p>Código postal: 2000</p>
+                    <p>Localidad: Rosario</p>
+                </article>
+            </section>
+
+            <section id="expLab" class="tematica">
+                <article id="titExpLab" class="titulo">
+                    <i class="fa-solid fa-briefcase iconoTitulo"></i>
+                    <h3>EXPERIENCIA LABORAL</h3>
+                    <div class="fleVisibilidad" id="mostrarExpLab">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarExpLab">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article>
+                    <ul class="datos">
+                        <li>
+                            <p><span class="resaltar">2016 - actualidad:</span> trabajo en developer</p>
+                        </li>
+                        <li>
+                            <p><span class="resaltar">2003 - 2016:</span> Soporte Tecnico</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="estudios" class="tematica">
+                <article id="titEstudios" class="titulo">
+                    <i class="fa-solid fa-graduation-cap iconoTitulo"></i>
+                    <h3>ESTUDIOS</h3>
+                    <div class="fleVisibilidad" id="mostrarEstudios">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarEstudios">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <ul>
+                        <li>
+                            <p><span class="resaltar">Ingeniería en sistemas:</span> en curso</p>
+                        </li>
+                        <li>
+                            <p><span class="resaltar">Secundario:</span> completo</p>
+                        </li>
+                        <li>
+                            <p><span class="resaltar">Primario:</span> completo</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="contactar" class="tematica">
+                <article  id="titContactar" class="titulo">
+                    <i class="fa-solid fa-envelope iconoTitulo"></i>
+                    <h3>CONTACTAR</h3>
+                    <div class="fleVisibilidad" id="mostrarContactar">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarContactar">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article>
+                    <form id="formularioContactar">
+                        <label for="nombreCont">Nombre:</label>
+                        <input type="text" name="nombreCont" id="nombreCont" class="cajaFormulario" required placeholder="NOMBRE"><br>
+
+                        <label for="apellidoCont">Apellido:</label>
+                        <input type="text" name="apellidoCont" id="apellidoCont" class="cajaFormulario" required placeholder="APELLIDO"><br>
+
+                        <label for="correoElecCont">Correo electrónico</label>
+                        <input type="email" name="correoElecCont" id="correoElecCont" class="cajaFormulario" required placeholder="correo@ejemplo.com"><br>
+
+                        <label for="asuntoCont">Asunto:</label>
+                        <input type="text" name="asuntoCont" id="asuntoCont" class="cajaFormulario" required placeholder="ASUNTO"><br>
+
+                        <textarea name="comentariosCont" id="comentariosCont" class="cajaFormulario" cols="50" rows="8" placeholder="Informacion adicionales..."></textarea><br>
+                        <input type="submit" id="enviarFormulario" class="cajaFormulario" name="Enviar" value="Enviar">
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <i id="btnToTop" title='Ir al inicio' class="glyphicon glyphicon-arrow-up"></i>
+
+        <footer>
+            Documento creado para el curso Ticmas 2023 
+            <p>Consulte en Git Prueba repositorio</a> para acceder a los archivos.</p>
+        </footer>
+    </div>
+    <script src="js/funcionalidad.js"></script>
+
+
 </body>
+
 </html>
